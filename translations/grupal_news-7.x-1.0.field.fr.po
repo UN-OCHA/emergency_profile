@@ -1,0 +1,31 @@
+# French translation of Grupal News (7.10)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Grupal News (7.10)\n"
+"POT-Creation-Date: 2011-12-25 23:29+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: field:comment_body:comment_node_news:label
+msgctxt "comment_body:comment_node_news:label"
+msgid "Comment"
+msgstr "Commentaire"
+
+#: field:body:news:label
+msgctxt "body:news:label"
+msgid "Body"
+msgstr "Corps"
+
+#: field:field_news_image:news:label
+msgctxt "field_news_image:news:label"
+msgid "Image"
+msgstr "Image"
+
+#: field:field_news_tags:news:label
+msgctxt "field_news_tags:news:label"
+msgid "Tags"
+msgstr "Tags"
