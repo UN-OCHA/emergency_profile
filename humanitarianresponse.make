@@ -24,7 +24,7 @@ projects[humanitarianresponse_layout][download][branch] = "master"
 ; ------
 projects[humanitarianresponse][type] = "theme"
 projects[humanitarianresponse][download][type] = "git"
-projects[humanitarianresponse][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_theme.git"
+projects[humanitarianresponse][download][url] = "gitosis@viguierjust.com:humanitarianresponse/theme.git"
 projects[humanitarianresponse][download][branch] = "master"
 
 ; Libraries
