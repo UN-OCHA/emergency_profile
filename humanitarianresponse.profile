@@ -110,6 +110,7 @@ function humanitarianresponse_locale_selection(&$install_state) {
       // knows what he is doing.
       $locale = current($locales);
       $install_state['parameters']['locale'] = $locale->name;
+      $install_state['parameters']['additional_locales'] = drush_get_option('extra_languages', array());
       return;
     }
     else {
