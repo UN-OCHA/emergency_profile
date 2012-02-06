@@ -6,6 +6,8 @@ profiler_v2('humanitarianresponse');
 // Include grupal profiler
 !function_exists('grupal_profiler') ? require_once('libraries/grupal/grupal.inc') : FALSE;
 
+define('GRUPAL_PROFILER_DEBUG', TRUE);
+
 /**
  * Implement hook_install_tasks().
  */
