@@ -8,6 +8,7 @@ profiler_v2('humanitarianresponse');
  */
 function humanitarianresponse_install_tasks($install_state) {
   // Determine whether translation import tasks will need to be performed.
+  file_put_contents('/tmp/humanitarianresponse', var_export(drush_get_option('extra_languages', array()), TRUE));
   $needs_translations = FALSE;
   if (!empty($install_state['parameters']['locale'])) {
     if (!$install_state['interactive'] && !empty(drush_get_option('extra_languages', array()))) {
