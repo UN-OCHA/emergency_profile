@@ -10,6 +10,9 @@ function humanitarianresponse_install_tasks($install_state) {
   // Determine whether translation import tasks will need to be performed.
   $needs_translations = FALSE;
   if (!empty($install_state['parameters']['locale'])) {
+    if (!$install_state['interactive'] && !empty(drush_get_option('extra_languages', array()))) {
+      $install_state['parameters']['additional_locales'] = drush_get_option('extra_languages', array());
+    }
     if (!empty($install_state['parameters']['additional_locales'])) {
       $needs_translations = TRUE;
     }
@@ -110,7 +113,6 @@ function humanitarianresponse_locale_selection(&$install_state) {
       // knows what he is doing.
       $locale = current($locales);
       $install_state['parameters']['locale'] = $locale->name;
-      $install_state['parameters']['additional_locales'] = drush_get_option('extra_languages', array());
       return;
     }
     else {
