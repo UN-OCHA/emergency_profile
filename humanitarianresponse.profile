@@ -13,7 +13,7 @@ function humanitarianresponse_install_tasks($install_state) {
   if (!empty($install_state['parameters']['locale'])) {
     if (!$install_state['interactive']) {
       // Try to get additional locales from drush
-      $install_state['parameters']['additional_locales'] = drush_get_option('extra_languages', array());
+      $install_state['parameters']['additional_locales'] = humanitarianresponse_clean_additional_locales(drush_get_option('extra_languages', array()), $install_state['parameters']['locale']);
     }
     if (!empty($install_state['parameters']['additional_locales'])) {
       $needs_translations = TRUE;
