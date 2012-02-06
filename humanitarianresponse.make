@@ -31,3 +31,7 @@ projects[humanitarianresponse][download][branch] = "master"
 ; ---------
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
+
+libraries[grupal][download][type] = "git"
+libraries[grupal][download][url] = "gitosis@viguierjust.com:grupal/profiler.git"
+libraries[grupal][download][branch] = "master"
