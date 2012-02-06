@@ -8,13 +8,12 @@ profiler_v2('humanitarianresponse');
  */
 function humanitarianresponse_install_tasks($install_state) {
   // Determine whether translation import tasks will need to be performed.
-  file_put_contents('/tmp/humanitarianresponse', var_export(drush_get_option('extra_languages', array()), TRUE));
   $needs_translations = FALSE;
   if (!empty($install_state['parameters']['locale'])) {
-    if (!$install_state['interactive']) {
+    /*if (!$install_state['interactive']) {
       // Try to get additional locales from drush
       $install_state['parameters']['additional_locales'] = humanitarianresponse_clean_additional_locales(drush_get_option('extra_languages', array()), $install_state['parameters']['locale']);
-    }
+    }*/
     if (!empty($install_state['parameters']['additional_locales'])) {
       $needs_translations = TRUE;
     }
@@ -147,6 +146,10 @@ function humanitarianresponse_locale_selection(&$install_state) {
         throw new Exception(st('Sorry, you must select a language to continue the installation.'));
       }
     }
+  }
+  
+  if (empty($install_state['parameters']['additional_locales'])) {
+    $install_state['parameters']['additional_locales'] = humanitarianresponse_clean_additional_locales(drush_get_option('extra_languages', array()), $install_state['parameters']['locale']);
   }
 }
 
