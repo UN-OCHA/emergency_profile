@@ -11,7 +11,8 @@ function humanitarianresponse_install_tasks($install_state) {
   file_put_contents('/tmp/humanitarianresponse', var_export(drush_get_option('extra_languages', array()), TRUE));
   $needs_translations = FALSE;
   if (!empty($install_state['parameters']['locale'])) {
-    if (!$install_state['interactive'] && !empty(drush_get_option('extra_languages', array()))) {
+    if (!$install_state['interactive']) {
+      // Try to get additional locales from drush
       $install_state['parameters']['additional_locales'] = drush_get_option('extra_languages', array());
     }
     if (!empty($install_state['parameters']['additional_locales'])) {
