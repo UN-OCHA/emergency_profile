@@ -6,17 +6,16 @@ base = grupal
 dependencies[] = grupal_core
 dependencies[] = grupal_news
 dependencies[] = grupal_page
-dependencies[] = grupal_links
-dependencies[] = grupal_events
-dependencies[] = grupal_events_location
-dependencies[] = grupal_documents
-dependencies[] = grupal_documents_private
-dependencies[] = grupal_documents_public
-dependencies[] = grupal_user_login
+;dependencies[] = grupal_links
+;dependencies[] = grupal_events
+;dependencies[] = grupal_events_location
+;dependencies[] = grupal_documents
+;dependencies[] = grupal_documents_private
+;dependencies[] = grupal_documents_public
+;dependencies[] = grupal_user_login
 
-dependencies[] = humanitarianresponse_documents
-dependencies[] = humanitarianresponse_users
-dependencies[] = humanitarianresponse_layout
+;dependencies[] = humanitarianresponse_documents
+;dependencies[] = humanitarianresponse_users
+;dependencies[] = humanitarianresponse_layout
 files[] = humanitarianresponse.profile
-
 

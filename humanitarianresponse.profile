@@ -1,12 +1,12 @@
 <?php
 
+define('GRUPAL_PROFILER_DEBUG', TRUE);
+
 !function_exists('profiler_v2') ? require_once('libraries/profiler/profiler.inc') : FALSE;
 profiler_v2('humanitarianresponse');
 
 // Include grupal profiler
 !function_exists('grupal_profiler') ? require_once('libraries/grupal/grupal.inc') : FALSE;
-
-define('GRUPAL_PROFILER_DEBUG', TRUE);
 
 /**
  * Implement hook_install_tasks().
@@ -19,6 +19,12 @@ function humanitarianresponse_install_tasks($install_state) {
       'display_name' => st('Set up translations'),
       'display' => $needs_translations,
       'run' => $needs_translations ? INSTALL_TASK_RUN_IF_NOT_COMPLETED : INSTALL_TASK_SKIP,
+      'type' => 'batch',
+    ),
+    'grupal_profiler_import_vocabularies_batch' => array(
+      'display_name' => st('Import vocabularies'),
+      'display' => TRUE,
+      'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
       'type' => 'batch',
     ),
   );
