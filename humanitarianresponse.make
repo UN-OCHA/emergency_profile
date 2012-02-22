@@ -10,6 +10,36 @@ projects[humanitarianresponse_documents][download][type] = "git"
 projects[humanitarianresponse_documents][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_documents.git"
 projects[humanitarianresponse_documents][download][branch] = "master"
 
+projects[humanitarianresponse_clusters][type] = "module"
+projects[humanitarianresponse_clusters][download][type] = "git"
+projects[humanitarianresponse_clusters][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_clusters.git"
+projects[humanitarianresponse_clusters][download][branch] = "master"
+
+projects[humanitarianresponse_locations][type] = "module"
+projects[humanitarianresponse_locations][download][type] = "git"
+projects[humanitarianresponse_locations][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_locations.git"
+projects[humanitarianresponse_locations][download][branch] = "master"
+
+projects[humanitarianresponse_emergencies][type] = "module"
+projects[humanitarianresponse_emergencies][download][type] = "git"
+projects[humanitarianresponse_emergencies][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_emergencies.git"
+projects[humanitarianresponse_emergencies][download][branch] = "master"
+
+projects[humanitarianresponse_themes][type] = "module"
+projects[humanitarianresponse_themes][download][type] = "git"
+projects[humanitarianresponse_themes][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_themes.git"
+projects[humanitarianresponse_themes][download][branch] = "master"
+
+projects[humanitarianresponse_languages][type] = "module"
+projects[humanitarianresponse_languages][download][type] = "git"
+projects[humanitarianresponse_languages][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_languages.git"
+projects[humanitarianresponse_languages][download][branch] = "master"
+
+projects[humanitarianresponse_organizations][type] = "module"
+projects[humanitarianresponse_organizations][download][type] = "git"
+projects[humanitarianresponse_organizations][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_organizations.git"
+projects[humanitarianresponse_organizations][download][branch] = "master"
+
 projects[humanitarianresponse_users][type] = "module"
 projects[humanitarianresponse_users][download][type] = "git"
 projects[humanitarianresponse_users][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_users.git"
