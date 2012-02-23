@@ -1,4 +1,27 @@
+Coordination||
+- Coordination Hubs||
+- Presence||
+- Humanitarian Profile
+- Who What Where
+- Calendar
+- Contacts
 Resources||
 - Reports|document-types/reports
 - Policy & Guidance|document-types/policy-and-guidance
 - Training & Resource Materials|document-types/training-and-resource-materials
+- Key documents||
+- Dashboard||
+- Assessments/Registry||
+Funding||
+- FTS Updates||
+- Funding Mechanism||
+Clusters||
+Map Center||
+- Maps||
+- GIS Data||
+Media Center||
+- News|news
+- Events|events
+- Press Releases|document-types/press-release
+- Photos||
+- Videos||
