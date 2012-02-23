@@ -55,6 +55,11 @@ projects[humanitarianresponse_news][download][type] = "git"
 projects[humanitarianresponse_news][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_news.git"
 projects[humanitarianresponse_news][download][branch] = "master"
 
+projects[humanitarianresponse_maps][type] = "module"
+projects[humanitarianresponse_maps][download][type] = "git"
+projects[humanitarianresponse_maps][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_maps.git"
+projects[humanitarianresponse_maps][download][branch] = "master"
+
 projects[humanitarianresponse_users][type] = "module"
 projects[humanitarianresponse_users][download][type] = "git"
 projects[humanitarianresponse_users][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_users.git"

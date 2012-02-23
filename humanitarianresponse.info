@@ -12,6 +12,7 @@ dependencies[] = grupal_events_location
 dependencies[] = grupal_user_login
 
 dependencies[] = humanitarianresponse_documents
+dependencies[] = humanitarianresponse_maps
 dependencies[] = humanitarianresponse_news
 dependencies[] = humanitarianresponse_events
 dependencies[] = humanitarianresponse_links
