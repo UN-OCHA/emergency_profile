@@ -40,6 +40,21 @@ projects[humanitarianresponse_organizations][download][type] = "git"
 projects[humanitarianresponse_organizations][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_organizations.git"
 projects[humanitarianresponse_organizations][download][branch] = "master"
 
+projects[humanitarianresponse_events][type] = "module"
+projects[humanitarianresponse_events][download][type] = "git"
+projects[humanitarianresponse_events][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_events.git"
+projects[humanitarianresponse_events][download][branch] = "master"
+
+projects[humanitarianresponse_links][type] = "module"
+projects[humanitarianresponse_links][download][type] = "git"
+projects[humanitarianresponse_links][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_links.git"
+projects[humanitarianresponse_links][download][branch] = "master"
+
+projects[humanitarianresponse_news][type] = "module"
+projects[humanitarianresponse_news][download][type] = "git"
+projects[humanitarianresponse_news][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_news.git"
+projects[humanitarianresponse_news][download][branch] = "master"
+
 projects[humanitarianresponse_users][type] = "module"
 projects[humanitarianresponse_users][download][type] = "git"
 projects[humanitarianresponse_users][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_users.git"
