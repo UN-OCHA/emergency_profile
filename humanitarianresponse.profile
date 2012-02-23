@@ -27,6 +27,12 @@ function humanitarianresponse_install_tasks($install_state) {
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
       'type' => 'batch',
     ),
+    'grupal_profiler_import_menus_batch' => array(
+      'display_name' => st('Import menus'),
+      'display' => TRUE,
+      'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
+      'type' => 'batch',
+    ),
   );
 }
   
