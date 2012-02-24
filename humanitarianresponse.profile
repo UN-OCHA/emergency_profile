@@ -21,7 +21,7 @@ function humanitarianresponse_install_tasks($install_state) {
       'run' => $needs_translations ? INSTALL_TASK_RUN_IF_NOT_COMPLETED : INSTALL_TASK_SKIP,
       'type' => 'batch',
     ),
-    'grupal_profiler_import_vocabularies_batch' => array(
+    'humanitarianresponse_import_vocabularies_batch' => array(
       'display_name' => st('Import vocabularies'),
       'display' => TRUE,
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
@@ -34,6 +34,15 @@ function humanitarianresponse_install_tasks($install_state) {
       'type' => 'batch',
     ),
   );
+}
+
+function humanitarianresponse_import_vocabularies_batch() {
+  $options = array(
+    'field_formats' => array(
+      'clusters' => 'name,field_cluster_prefix'
+    )
+  );
+  return grupal_profiler_import_vocabularies_batch($options);
 }
   
 
