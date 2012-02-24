@@ -7,9 +7,9 @@ Coordination||
 - Calendar
 - Contacts
 Resources||
-- Reports|document-types/reports
-- Policy & Guidance|document-types/policy-and-guidance
-- Training & Resource Materials|document-types/training-and-resource-materials
+- Reports|resources/reports
+- Policy & Guidance|resources/policy-and-guidance
+- Training & Resource Materials|resources/training-and-resource-materials
 - Key documents||
 - Dashboard||
 - Assessments/Registry||
@@ -21,8 +21,8 @@ Map Center||
 - Maps||
 - GIS Data||
 Media Center||
-- News|news
-- Events|events
-- Press Releases|document-types/press-release
+- News|media/news
+- Events|media/events
+- Press Releases|media/press-releases
 - Photos||
 - Videos||
