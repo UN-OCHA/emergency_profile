@@ -80,6 +80,11 @@ projects[humanitarianresponse_funding][download][type] = "git"
 projects[humanitarianresponse_funding][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_funding.git"
 projects[humanitarianresponse_funding][download][branch] = "master"
 
+projects[humanitarianresponse_highlight][type] = "module"
+projects[humanitarianresponse_highlight][download][type] = "git"
+projects[humanitarianresponse_highlight][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_highlight.git"
+projects[humanitarianresponse_highlight][download][branch] = "master"
+
 ; Themes
 ; ------
 projects[humanitarianresponse][type] = "theme"
