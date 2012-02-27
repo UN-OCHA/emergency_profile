@@ -4,11 +4,8 @@ version = VERSION
 core = 7.x
 base = grupal
 dependencies[] = grupal_core
-dependencies[] = grupal_news
 dependencies[] = grupal_page
 dependencies[] = grupal_links
-dependencies[] = grupal_events
-dependencies[] = grupal_events_location
 dependencies[] = grupal_user_login
 
 dependencies[] = humanitarianresponse_documents
