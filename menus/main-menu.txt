@@ -12,8 +12,8 @@ Resources||
 - Training & Resource Materials|resources/training-and-resource-materials
 - Dashboard||
 - Assessments/Registry||
-Funding|funding
-- FTS Updates|funding/fts|
+Funding|
+- FTS Updates||
 - Funding Mechanism
 Clusters|clusters
 Map Center||
