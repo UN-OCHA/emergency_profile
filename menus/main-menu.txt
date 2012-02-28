@@ -5,17 +5,17 @@ Coordination||
 - Humanitarian Profile
 - Who What Where
 - Calendar|coordination/calendar
-- Contacts
+- Contacts|coordination/contacts
 Resources||
 - Reports|resources/reports
 - Policy & Guidance|resources/policy-and-guidance
 - Training & Resource Materials|resources/training-and-resource-materials
 - Dashboard||
 - Assessments/Registry||
-Funding||
-- FTS Updates||
-- Funding Mechanism||
-Clusters||
+Funding|funding
+- FTS Updates|funding/fts|
+- Funding Mechanism
+Clusters|clusters
 Map Center||
 - Maps|maps/maps|
 - GIS Data||
