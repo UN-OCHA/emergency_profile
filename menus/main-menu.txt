@@ -4,13 +4,12 @@ Coordination||
 - Presence||
 - Humanitarian Profile
 - Who What Where
-- Calendar
+- Calendar|coordination/calendar
 - Contacts
 Resources||
 - Reports|resources/reports
 - Policy & Guidance|resources/policy-and-guidance
 - Training & Resource Materials|resources/training-and-resource-materials
-- Key documents||
 - Dashboard||
 - Assessments/Registry||
 Funding||
