@@ -1,9 +1,9 @@
 Home||
-Coordination||
+Coordination|
 - Coordination Hubs|coordination/coordination-hubs
-- Presence||
-- Humanitarian Profile
-- Who What Where
+- Presence|coordination/presence
+- Humanitarian Profile|coordination/profile
+- Who What Where|coordination/3w
 - Calendar|coordination/calendar
 - Contacts|coordination/contacts
 Resources||
