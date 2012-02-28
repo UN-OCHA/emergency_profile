@@ -85,6 +85,16 @@ projects[humanitarianresponse_highlight][download][type] = "git"
 projects[humanitarianresponse_highlight][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_highlight.git"
 projects[humanitarianresponse_highlight][download][branch] = "master"
 
+projects[humanitarianresponse_display_properties][type] = "module"
+projects[humanitarianresponse_display_properties][download][type] = "git"
+projects[humanitarianresponse_display_properties][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_display_properties.git"
+projects[humanitarianresponse_display_properties][download][branch] = "master"
+
+projects[humanitarianresponse_contacts][type] = "module"
+projects[humanitarianresponse_contacts][download][type] = "git"
+projects[humanitarianresponse_contacts][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_contacts.git"
+projects[humanitarianresponse_contacts][download][branch] = "master"
+
 ; Themes
 ; ------
 projects[humanitarianresponse][type] = "theme"
