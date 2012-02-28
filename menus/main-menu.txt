@@ -1,6 +1,6 @@
 Home||
 Coordination||
-- Coordination Hubs||
+- Coordination Hubs|coordination/coordination-hubs
 - Presence||
 - Humanitarian Profile
 - Who What Where
@@ -12,9 +12,9 @@ Resources||
 - Training & Resource Materials|resources/training-and-resource-materials
 - Dashboard||
 - Assessments/Registry||
-Funding|
-- FTS Updates||
-- Funding Mechanism
+Funding|funding
+- FTS Updates|funding/fts
+- Funding Mechanisms|funding
 Clusters|clusters
 Map Center||
 - Maps|maps/maps|
