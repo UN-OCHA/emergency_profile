@@ -110,6 +110,16 @@ projects[humanitarianresponse_resources][download][type] = "git"
 projects[humanitarianresponse_resources][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_resources.git"
 projects[humanitarianresponse_resources][download][branch] = "master"
 
+projects[humanitarianresponse_assessments][type] = "module"
+projects[humanitarianresponse_assessments][download][type] = "git"
+projects[humanitarianresponse_assessments][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_assessments.git"
+projects[humanitarianresponse_assessments][download][branch] = "master"
+
+projects[humanitarianresponse_indicators][type] = "module"
+projects[humanitarianresponse_indicators][download][type] = "git"
+projects[humanitarianresponse_indicators][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_indicators.git"
+projects[humanitarianresponse_indicators][download][branch] = "master"
+
 ; Themes
 ; ------
 projects[humanitarianresponse][type] = "theme"
