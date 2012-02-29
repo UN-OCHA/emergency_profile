@@ -95,6 +95,11 @@ projects[humanitarianresponse_contacts][download][type] = "git"
 projects[humanitarianresponse_contacts][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_contacts.git"
 projects[humanitarianresponse_contacts][download][branch] = "master"
 
+projects[humanitarianresponse_search][type] = "module"
+projects[humanitarianresponse_search][download][type] = "git"
+projects[humanitarianresponse_search][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_search.git"
+projects[humanitarianresponse_search][download][branch] = "master"
+
 ; Themes
 ; ------
 projects[humanitarianresponse][type] = "theme"

@@ -15,6 +15,7 @@ dependencies[] = humanitarianresponse_links
 dependencies[] = humanitarianresponse_users
 dependencies[] = humanitarianresponse_highlight
 dependencies[] = humanitarianresponse_contacts
+dependencies[] = humanitarianresponse_search
 dependencies[] = humanitarianresponse_layout
 files[] = humanitarianresponse.profile
 
