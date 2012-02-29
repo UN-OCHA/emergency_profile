@@ -6,12 +6,12 @@ Coordination|
 - Who What Where|coordination/3w
 - Calendar|coordination/calendar
 - Contacts|coordination/contacts
-Resources||
-- Reports|resources/reports
-- Policy & Guidance|resources/policy-and-guidance
-- Training & Resource Materials|resources/training-and-resource-materials
+Resources|resources
+- Reports|
+- Policy & Guidance|
+- Training & Resource Materials|
 - Dashboard||
-- Assessments/Registry||
+- Assessments/Registry|resources/assessment-registry|
 Funding|funding
 - FTS Updates|funding/fts
 - Funding Mechanisms|funding
