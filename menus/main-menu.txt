@@ -1,4 +1,4 @@
-Home||
+Home|<front>
 Coordination|
 - Coordination Hubs|coordination/coordination-hubs
 - Presence|coordination/presence
