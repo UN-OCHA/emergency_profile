@@ -1,5 +1,5 @@
 Home|<front>
-Coordination|
+Coordination|coordination
 - Coordination Hubs|coordination/coordination-hubs
 - Presence|coordination/presence
 - Humanitarian Profile|coordination/profile
@@ -7,19 +7,19 @@ Coordination|
 - Calendar|coordination/calendar
 - Contacts|coordination/contacts
 Resources|resources
-- Reports|
-- Policy & Guidance|
-- Training & Resource Materials|
-- Dashboard||
-- Assessments/Registry|resources/assessment-registry|
+- Reports|resources/reports
+- Policy & Guidance|resources/policy-and-guidance
+- Training & Resource Materials|resources/training-and-resource-materials
+- Dashboard|resources/dashboard
+- Assessments/Registry|resources/assessment-registry
 Funding|funding
 - FTS Updates|funding/fts
 - Funding Mechanisms|funding
 Clusters|clusters
 Map Center||
-- Maps|maps/maps|
-- GIS Data||
-Media Center||
+- Maps|maps/maps
+- GIS Data|maps/gis-data
+Media Center|media
 - News|media/news
 - Events|media/events
 - Press Releases|media/press-releases
