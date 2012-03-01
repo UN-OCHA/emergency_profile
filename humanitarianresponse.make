@@ -120,6 +120,11 @@ projects[humanitarianresponse_indicators][download][type] = "git"
 projects[humanitarianresponse_indicators][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_indicators.git"
 projects[humanitarianresponse_indicators][download][branch] = "master"
 
+projects[humanitarianresponse_profiles][type] = "module"
+projects[humanitarianresponse_profiles][download][type] = "git"
+projects[humanitarianresponse_profiles][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_profiles.git"
+projects[humanitarianresponse_profiles][download][branch] = "master"
+
 ; Themes
 ; ------
 projects[humanitarianresponse][type] = "theme"

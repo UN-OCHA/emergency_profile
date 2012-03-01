@@ -20,6 +20,7 @@ dependencies[] = humanitarianresponse_resources
 dependencies[] = humanitarianresponse_assessments
 dependencies[] = humanitarianresponse_indicators
 dependencies[] = humanitarianresponse_media
+dependencies[] = humanitarianresponse_profiles
 dependencies[] = humanitarianresponse_layout
 files[] = humanitarianresponse.profile
 
