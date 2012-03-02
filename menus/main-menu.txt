@@ -2,7 +2,7 @@ Home|<front>
 Coordination|coordination
 - Coordination Hubs|coordination/coordination-hubs
 - Presence|coordination/presence
-- Humanitarian Profile|coordination/profile
+- Humanitarian Profile|coordination/humanitarian-profile
 - Who What Where|coordination/3w
 - Calendar|coordination/calendar
 - Contacts|coordination/contacts
