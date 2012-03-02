@@ -45,7 +45,7 @@ function humanitarianresponse_install_tasks($install_state) {
 function humanitarianresponse_import_vocabularies_batch() {
   $options = array(
     'field_formats' => array(
-      'clusters' => 'name,field_cluster_prefix'
+      'clusters' => 'name,field_cluster_prefix,field_cluster_image'
     )
   );
   return grupal_profiler_import_vocabularies_batch($options);
