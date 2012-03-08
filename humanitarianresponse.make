@@ -30,11 +30,6 @@ projects[humanitarianresponse_themes][download][type] = "git"
 projects[humanitarianresponse_themes][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_themes.git"
 projects[humanitarianresponse_themes][download][branch] = "master"
 
-projects[humanitarianresponse_languages][type] = "module"
-projects[humanitarianresponse_languages][download][type] = "git"
-projects[humanitarianresponse_languages][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_languages.git"
-projects[humanitarianresponse_languages][download][branch] = "master"
-
 projects[humanitarianresponse_organizations][type] = "module"
 projects[humanitarianresponse_organizations][download][type] = "git"
 projects[humanitarianresponse_organizations][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_organizations.git"
@@ -154,8 +149,6 @@ projects[humanitarianresponse][download][branch] = "master"
 
 ; Libraries
 ; ---------
-libraries[profiler][download][type] = "get"
-libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
 
 libraries[grupal][download][type] = "git"
 libraries[grupal][download][url] = "gitosis@viguierjust.com:grupal/profiler.git"
