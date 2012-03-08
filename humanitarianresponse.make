@@ -125,6 +125,26 @@ projects[humanitarianresponse_profiles][download][type] = "git"
 projects[humanitarianresponse_profiles][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_profiles.git"
 projects[humanitarianresponse_profiles][download][branch] = "master"
 
+projects[humanitarianresponse_core][type] = "module"
+projects[humanitarianresponse_core][download][type] = "git"
+projects[humanitarianresponse_core][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_core.git"
+projects[humanitarianresponse_core][download][branch] = "master"
+
+projects[humanitarianresponse_i18n][type] = "module"
+projects[humanitarianresponse_i18n][download][type] = "git"
+projects[humanitarianresponse_i18n][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_i18n.git"
+projects[humanitarianresponse_i18n][download][branch] = "master"
+
+projects[humanitarianresponse_mapping][type] = "module"
+projects[humanitarianresponse_mapping][download][type] = "git"
+projects[humanitarianresponse_mapping][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_mapping.git"
+projects[humanitarianresponse_mapping][download][branch] = "master"
+
+projects[humanitarianresponse_page][type] = "module"
+projects[humanitarianresponse_page][download][type] = "git"
+projects[humanitarianresponse_page][download][url] = "gitosis@viguierjust.com:humanitarianresponse/humanitarianresponse_page.git"
+projects[humanitarianresponse_page][download][branch] = "master"
+
 ; Themes
 ; ------
 projects[humanitarianresponse][type] = "theme"

@@ -1,11 +1,9 @@
 name = HumanitarianResponse
 description = Install HumanitarianResponse
-version = VERSION
+version = 7.x-1.0
 core = 7.x
-base = grupal
-dependencies[] = grupal_core
-dependencies[] = grupal_page
-dependencies[] = grupal_user_login
+dependencies[] = humanitarianresponse_core
+dependencies[] = humanitarianresponse_page
 
 dependencies[] = humanitarianresponse_documents
 dependencies[] = humanitarianresponse_maps
