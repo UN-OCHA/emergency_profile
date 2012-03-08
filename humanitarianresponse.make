@@ -150,6 +150,6 @@ projects[humanitarianresponse][download][branch] = "master"
 ; Libraries
 ; ---------
 
-libraries[grupal][download][type] = "git"
-libraries[grupal][download][url] = "gitosis@viguierjust.com:grupal/profiler.git"
-libraries[grupal][download][branch] = "master"
+libraries[humanitarianresponse][download][type] = "git"
+libraries[humanitarianresponse][download][url] = "gitosis@viguierjust.com:humanitarianresponse/profiler.git"
+libraries[humanitarianresponse][download][branch] = "master"
