@@ -30,7 +30,7 @@ function humanitarianresponse_install_tasks($install_state) {
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
       'type' => 'batch',
     ),
-    'humanitarianresponse_profiler_import_menus_batch' => array(
+    'humanitarianresponse_import_menus_batch' => array(
       'display_name' => st('Import menus'),
       'display' => TRUE,
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
@@ -62,3 +62,38 @@ function humanitarianresponse_install_tasks_alter(&$tasks, $install_state) {
   $tasks['install_load_profile']['function'] = 'humanitarianresponse_profiler_install_load_profile';
 }
 
+/**
+ * Import menus including cluster menu
+ */
+function humanitarianresponse_import_menus_batch() {
+  $root_path = realpath(drupal_get_path('module', 'node').'/../../');
+  $import_dir =  $root_path . '/' . drupal_get_path('profile', drupal_get_profile()) . '/menus/';
+
+  $filename = $import_dir . 'cluster.csv';
+  $row = 1;
+  if (($handle = fopen($filename, "r")) !== FALSE) {
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+      $title = $data[0];
+      $path = $data[1];
+      $options = array(
+        'menu_token_link_path' => $path,
+        'menu_token_data' => array(
+          'term' => array(
+            'type' => 'term',
+            'plugin' => 'term_context',
+            'options' => '',
+          )
+        )
+      );
+      $item = array(
+        'link_path' => '<front>',
+        'link_title' => $title,
+        'menu_name' => 'menu-cluster',
+        'options' => $options,
+      );
+      menu_link_save($item);
+    }
+    fclose($handle);
+  }
+  return humanitarianresponse_profiler_import_menus_batch();
+}
