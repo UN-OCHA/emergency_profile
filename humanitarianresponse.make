@@ -139,7 +139,7 @@ projects[humanitarianresponse_page][download][branch] = "master"
 ; ------
 projects[humanitarianresponse][type] = "theme"
 projects[humanitarianresponse][download][type] = "git"
-projects[humanitarianresponse][download][url] = "gitosis@viguierjust.com:humanitarianresponse/theme.git"
+projects[humanitarianresponse][download][url] = "https://git.humanitarianresponse.info/git/theme.git"
 projects[humanitarianresponse][download][branch] = "master"
 
 ; Libraries
