@@ -16,7 +16,7 @@ function emergency_site_install_tasks($install_state) {
       'run' => $needs_translations ? INSTALL_TASK_RUN_IF_NOT_COMPLETED : INSTALL_TASK_SKIP,
       'type' => 'batch',
     ),
-    'humanitarianresponse_import_vocabularies_batch' => array(
+    'emergency_site_import_vocabularies_batch' => array(
       'display_name' => st('Import vocabularies'),
       'display' => TRUE,
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
@@ -28,7 +28,7 @@ function emergency_site_install_tasks($install_state) {
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
       'type' => 'batch',
     ),
-    'humanitarianresponse_import_menus_batch' => array(
+    'emergency_site_import_menus_batch' => array(
       'display_name' => st('Import menus'),
       'display' => TRUE,
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
