@@ -5,5 +5,5 @@
  *
  * Perform actions to set up the site for this profile.
  */
-function humanitarianresponse_install() {
+function emergency_site_install() {
 }

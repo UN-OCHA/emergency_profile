@@ -1,10 +1,9 @@
-name = HumanitarianResponse
-description = Install HumanitarianResponse
-version = 7.x-1.0
+name = Emergency Site
+description = Install an Emergency Site
 core = 7.x
+
 dependencies[] = humanitarianresponse_core
 dependencies[] = humanitarianresponse_page
-
 dependencies[] = humanitarianresponse_documents
 dependencies[] = humanitarianresponse_maps
 dependencies[] = humanitarianresponse_news
@@ -19,5 +18,5 @@ dependencies[] = humanitarianresponse_assessments
 dependencies[] = humanitarianresponse_media
 dependencies[] = humanitarianresponse_profiles
 dependencies[] = humanitarianresponse_layout
-files[] = humanitarianresponse.profile
+files[] = emergency_site.profile
 

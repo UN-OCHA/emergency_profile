@@ -1,14 +1,12 @@
 <?php
 
-define('HUMANITARIANRESPONSE_PROFILER_DEBUG', TRUE);
-
 // Include humanitarianresponse profiler
 !function_exists('humanitarianresponse_profiler') ? require_once('libraries/humanitarianresponse_profiler/humanitarianresponse_profiler.inc') : FALSE;
 
 /**
  * Implement hook_install_tasks().
  */
-function humanitarianresponse_install_tasks($install_state) {
+function emergency_site_install_tasks($install_state) {
   $needs_translations = humanitarianresponse_profiler_needs_translations($install_state);
 
   return array(
@@ -39,7 +37,7 @@ function humanitarianresponse_install_tasks($install_state) {
   );
 }
 
-function humanitarianresponse_import_vocabularies_batch() {
+function emergency_site_import_vocabularies_batch() {
   $options = array(
     'field_formats' => array(
       'clusters' => 'name,field_cluster_prefix,field_cluster_image'
@@ -54,7 +52,7 @@ function humanitarianresponse_import_vocabularies_batch() {
  *
  * Perform actions to set up the site for this profile.
  */
-function humanitarianresponse_install_tasks_alter(&$tasks, $install_state) {
+function emergency_site_install_tasks_alter(&$tasks, $install_state) {
   // Remove core steps for translation imports.
   unset($tasks['install_import_locales']);
   unset($tasks['install_import_locales_remaining']);
@@ -65,7 +63,7 @@ function humanitarianresponse_install_tasks_alter(&$tasks, $install_state) {
 /**
  * Import menus including cluster menu
  */
-function humanitarianresponse_import_menus_batch() {
+function emergency_site_import_menus_batch() {
   $root_path = realpath(drupal_get_path('module', 'node').'/../../');
   $import_dir =  $root_path . '/' . drupal_get_path('profile', drupal_get_profile()) . '/menus/';
 
