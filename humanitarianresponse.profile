@@ -3,7 +3,7 @@
 define('HUMANITARIANRESPONSE_PROFILER_DEBUG', TRUE);
 
 // Include humanitarianresponse profiler
-!function_exists('humanitarianresponse_profiler') ? require_once('libraries/humanitarianresponse/humanitarianresponse.inc') : FALSE;
+!function_exists('humanitarianresponse_profiler') ? require_once('libraries/humanitarianresponse_profiler/humanitarianresponse_profiler.inc') : FALSE;
 
 /**
  * Implement hook_install_tasks().
