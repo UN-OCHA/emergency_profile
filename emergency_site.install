@@ -7,3 +7,54 @@
  */
 function emergency_site_install() {
 }
+
+/**
+ * Main Menu modifications
+ */
+function emergency_site_update_7100() {
+  // Map center
+  _emergency_site_path_update('maps', 'Visuals & Data', 'visuals-data');
+  // GIS Data
+  _emergency_site_path_update('maps/gis-data', 'COD/FOD Data', 'visuals-data/cod-fod');
+  _emergency_site_path_update('gis-data', 'COD/FOD Data', 'visuals-data/cod-fod');
+  _emergency_site_reimport_menu();
+}
+
+function _emergency_site_path_update($source_alias, $title, $target_alias) {
+  $ipath = path_load(array('alias' => $source_alias));
+  if (!empty($ipath)) {
+    $source = $ipath['source'];
+    // get nid
+    $nid = str_replace('node/', '', $ipath);
+    $node = node_load($nid);
+    $node->title = $title;
+    node_save($node);
+    $ipath['alias'] = $target_alias;
+    path_save($ipath);
+  }
+}
+
+function _emergency_site_reimport_menu() {
+  $root_path = realpath(drupal_get_path('module', 'node').'/../../');
+  $import_dir =  $root_path . '/' . drupal_get_path('profile', drupal_get_profile()) . '/menus/';
+
+  // Use Taxonomy CSV to import terms from a file.
+  $module_dir = $root_path . '/' . drupal_get_path('module', 'menu_import');
+  require_once("$module_dir/menu_import.module");
+  $filename = $import_dir . 'main-menu.txt';
+  
+  if (file_exists($filename)) {
+    $options = array(
+      'link_to_content' => 1,
+      'remove_menu_items' => 1,
+      'create_content' => 0,
+      'node_type' => 'page',
+      'node_body' => '',
+      'node_author' => '1',
+      'node_status' => '1',
+      'node_alias' => 1,
+    );
+    menu_import_file($filename, 'main-menu', $options);
+    
+  }
+}
