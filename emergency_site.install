@@ -21,15 +21,14 @@ function emergency_site_update_7100() {
   $links = menu_load_links('main-menu');
   // Get PLID
   foreach ($links as $link) {
-    if ($link['router_path'] == 'maps') {
-      $plid = $tmp['mlid'];
+    if ($link['link_title'] == 'Map Center') {
+      $plid = $link['mlid'];
     }
   }
   
   foreach ($links as $link) {
-    if ($link['router_path'] == 'maps') {
+    if ($link['link_title'] == 'Map Center') {
       $tmp = $link;
-      $tmp['router_path'] = 'visuals-data';
       $tmp['link_title'] = 'Visuals & Data';
       menu_link_save($tmp);
     }
@@ -40,9 +39,8 @@ function emergency_site_update_7100() {
       $tmp['link_title'] = 'Visuals';
       menu_link_save($tmp);
     }
-    if ($link['router_path'] == 'maps/gis-data' || $link['router_path'] == 'gis-data') {
+    if ($link['link_title'] == 'GIS Data') {
       $tmp = $link;
-      $tmp['router_path'] = 'visuals-data/cod-fod';
       $tmp['link_title'] = 'COD/FOD Data';
       menu_link_save($tmp);
     }
