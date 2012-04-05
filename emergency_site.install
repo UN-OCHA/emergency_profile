@@ -18,6 +18,9 @@ function emergency_site_update_7100() {
   _emergency_site_path_update('maps/gis-data', 'COD/FOD Data', 'visuals-data/cod-fod');
   _emergency_site_path_update('gis-data', 'COD/FOD Data', 'visuals-data/cod-fod');
   _emergency_site_reimport_menu();
+  
+  // Clear caches
+  cache_clear_all();
 }
 
 function _emergency_site_path_update($source_alias, $title, $target_alias) {
