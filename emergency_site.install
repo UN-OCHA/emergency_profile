@@ -32,26 +32,9 @@ function emergency_site_update_7100() {
       $tmp['link_title'] = 'Visuals & Data';
       menu_link_save($tmp);
     }
-    if ($link['router_path'] == 'maps/maps') {
-      $tmp = $link;
-      $tmp['link_path'] = 'visuals-data/visuals';
-      $tmp['router_path'] = 'visuals-data/visuals';
-      $tmp['link_title'] = 'Visuals';
-      menu_link_save($tmp);
-    }
     if ($link['link_title'] == 'GIS Data') {
       $tmp = $link;
       $tmp['link_title'] = 'COD/FOD Data';
-      menu_link_save($tmp);
-    }
-    if ($link['router_path'] == 'coordination/humanitarian-profile') {
-      $tmp = $link;
-      $tmp['router_path'] = 'visuals-data/humanitarian-profile';
-      $tmp['link_path'] = 'visuals-data/humanitarian-profile';
-      $tmp['link_title'] = 'Humanitarian Profile Summary';
-      if (isset($plid)) {
-        $tmp['plid'] = $plid;
-      }
       menu_link_save($tmp);
     }
   }
