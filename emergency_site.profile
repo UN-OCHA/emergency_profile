@@ -34,6 +34,12 @@ function emergency_site_install_tasks($install_state) {
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
       'type' => 'batch',
     ),
+    'emergency_site_import_default_content' => array(
+      'display_name' => st('Import default content'),
+      'display' => TRUE,
+      'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
+      'type' => 'batch',
+    ),
   );
 }
 
@@ -94,4 +100,26 @@ function emergency_site_import_menus_batch() {
     fclose($handle);
   }
   return humanitarianresponse_profiler_import_menus_batch();
+}
+
+/**
+ * Import default content
+ */
+function emergency_site_import_default_content() {
+  global $base_url;
+  // Check URL
+  preg_match('@^(?:http://)?([^.]+)(.humanitarianresponse.info)@i',
+    $base_url, $matches);
+  if (!empty($matches)) {
+    $country = $matches[1];
+    $node_path = drupal_get_normal_path('visuals-data/cod-fod');
+    $nid = str_replace('node/', '', $node_path);
+    if (!empty($nid)) {
+      $node = node_load($nid);
+      $code = '<iframe width=988 height=500 scrolling="auto" marginheight="0" marginwidth="0" src="http://cod.humanitarianresponse.info/country-region/'.$country.'?iframe"></iframe>';
+      $node->body[LANGUAGE_NONE][0]['value'] = $code;
+      $node->body[LANGUAGE_NONE][0]['format'] = 'full_html';
+      node_save($node);
+    }
+  }
 }
