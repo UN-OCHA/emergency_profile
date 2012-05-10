@@ -10,7 +10,7 @@ Resources|resources
 - Policy & Guidance|resources/policy-and-guidance
 - Training & Resource Materials|resources/training-and-resource-materials
 - Dashboard|resources/dashboard
-- Assessments/Registry|resources/assessment-registry
+- Assessment Registry|resources/assessment-registry
 Funding|funding
 - FTS Updates|funding/fts
 - Funding Mechanisms|funding
