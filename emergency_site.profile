@@ -7,63 +7,21 @@
  * Implement hook_install_tasks().
  */
 function emergency_site_install_tasks($install_state) {
-  $needs_translations = humanitarianresponse_profiler_needs_translations($install_state);
 
   return array(
-    'humanitarianresponse_profiler_import_translations' => array(
-      'display_name' => st('Set up translations'),
-      'display' => $needs_translations,
-      'run' => $needs_translations ? INSTALL_TASK_RUN_IF_NOT_COMPLETED : INSTALL_TASK_SKIP,
-      'type' => 'batch',
-    ),
-    'emergency_site_import_vocabularies_batch' => array(
-      'display_name' => st('Import vocabularies'),
-      'display' => TRUE,
-      'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
-      'type' => 'batch',
-    ),
-    'humanitarianresponse_profiler_import_aliases' => array(
-      'display_name' => st('Import URL aliases'),
-      'display' => TRUE,
-      'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
-      'type' => 'batch',
-    ),
     'emergency_site_import_menus_batch' => array(
-      'display_name' => st('Import menus'),
+      'display_name' => st('Import menu'),
       'display' => TRUE,
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
-      'type' => 'batch',
+      'type' => 'batch'
     ),
-    'emergency_site_import_default_content' => array(
-      'display_name' => st('Import default content'),
+    'emergency_site_rebuild_menus' => array(
+      'display_name' => st('Rebuild menus'),
       'display' => TRUE,
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
       'type' => 'batch',
     ),
   );
-}
-
-function emergency_site_import_vocabularies_batch() {
-  $options = array(
-    'field_formats' => array(
-      'clusters' => 'name,field_cluster_prefix,field_cluster_image'
-    )
-  );
-  return humanitarianresponse_profiler_import_vocabularies_batch($options);
-}
-  
-
-/**
- * Implement hook_install_tasks_alter().
- *
- * Perform actions to set up the site for this profile.
- */
-function emergency_site_install_tasks_alter(&$tasks, $install_state) {
-  // Remove core steps for translation imports.
-  unset($tasks['install_import_locales']);
-  unset($tasks['install_import_locales_remaining']);
-  $tasks['install_select_locale']['function'] = 'humanitarianresponse_profiler_locale_selection';
-  $tasks['install_load_profile']['function'] = 'humanitarianresponse_profiler_install_load_profile';
 }
 
 /**
@@ -102,24 +60,30 @@ function emergency_site_import_menus_batch() {
   return humanitarianresponse_profiler_import_menus_batch();
 }
 
-/**
- * Import default content
- */
-function emergency_site_import_default_content() {
-  global $base_url;
-  // Check URL
-  preg_match('@^(?:http://)?([^.]+)(.humanitarianresponse.info)@i',
-    $base_url, $matches);
-  if (!empty($matches)) {
-    $country = $matches[1];
-    $node_path = drupal_get_normal_path('visuals-data/cod-fod');
-    $nid = str_replace('node/', '', $node_path);
-    if (!empty($nid)) {
-      $node = node_load($nid);
-      $code = '<iframe width=988 height=500 scrolling="auto" marginheight="0" marginwidth="0" src="http://cod.humanitarianresponse.info/country-region/'.$country.'?iframe"></iframe>';
-      $node->body[LANGUAGE_NONE][0]['value'] = $code;
-      $node->body[LANGUAGE_NONE][0]['format'] = 'full_html';
-      node_save($node);
-    }
+function emergency_site_rebuild_menus(&$install_state) {
+  $root_path = realpath(drupal_get_path('module', 'node').'/../../');
+
+  $module_dir = $root_path . '/' . drupal_get_path('module', 'taxonomy_menu');
+  require_once("$module_dir/taxonomy_menu.batch.inc");
+  
+  $voc_names = array('clusters', 'funding');
+  $operations = array();
+  
+  foreach ($voc_names as $voc_name) {
+    $voc = taxonomy_vocabulary_machine_name_load($voc_name);
+    $vid = $voc->vid;
+    $terms = taxonomy_get_tree($vid);
+    $menu_name = variable_get(_taxonomy_menu_build_variable('vocab_menu', $vid), FALSE);
+    $operations[] = array('_taxonomy_menu_insert_link_items_process', array($terms, $menu_name));
   }
+
+  $batch = array(
+    'operations' => $operations,
+    'finished' => '_taxonomy_menu_insert_link_items_success',
+    'title' => t('Rebuilding Taxonomy Menu'),
+    'init_message' => t('The menu items have been deleted, and are about to be regenerated.'),
+    'progress_message' => t('Import progress: Completed @current of @total stages.'),
+    'error_message' => t('The Taxonomy Menu rebuild process encountered an error.'),
+  );
+  return $batch;
 }

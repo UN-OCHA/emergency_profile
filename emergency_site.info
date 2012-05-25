@@ -17,6 +17,17 @@ dependencies[] = humanitarianresponse_resources
 dependencies[] = humanitarianresponse_assessments
 dependencies[] = humanitarianresponse_media
 dependencies[] = humanitarianresponse_profiles
+dependencies[] = humanitarianresponse_emergency_menu
 dependencies[] = humanitarianresponse_layout
+dependencies[] = humanitarianresponse_themes_data
+dependencies[] = humanitarianresponse_emergencies_data
+dependencies[] = humanitarianresponse_documents_data
+dependencies[] = humanitarianresponse_display_data
+dependencies[] = humanitarianresponse_events_data
+dependencies[] = humanitarianresponse_funding_data
+dependencies[] = humanitarianresponse_maps_data
+dependencies[] = humanitarianresponse_clusters_data
+dependencies[] = humanitarianresponse_clusters_menu
+dependencies[] = humanitarianresponse_funding_menu
 files[] = emergency_site.profile
 
