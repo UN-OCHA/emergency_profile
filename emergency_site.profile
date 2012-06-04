@@ -28,7 +28,7 @@ function emergency_site_install_tasks($install_state) {
  * Import menus including cluster menu
  */
 function emergency_site_import_menus_batch() {
-  cache_clear_all();
+  drupal_flush_all_caches();
   $root_path = realpath(drupal_get_path('module', 'node').'/../../');
   $import_dir =  $root_path . '/' . drupal_get_path('profile', drupal_get_profile()) . '/menus/';
 
