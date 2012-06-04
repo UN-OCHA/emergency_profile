@@ -29,7 +29,7 @@ function emergency_site_install_tasks($install_state) {
  */
 function emergency_site_import_menus_batch() {
   // Reset features cache
-  features_get_features(NULL, TRUE);
+  debug(features_get_features(NULL, TRUE));
   drupal_flush_all_caches();
   $root_path = realpath(drupal_get_path('module', 'node').'/../../');
   $import_dir =  $root_path . '/' . drupal_get_path('profile', drupal_get_profile()) . '/menus/';
@@ -64,6 +64,9 @@ function emergency_site_import_menus_batch() {
 }
 
 function emergency_site_rebuild_menus(&$install_state) {
+  // Reset features cache
+  debug(features_get_features(NULL, TRUE));
+  drupal_flush_all_caches();
   $root_path = realpath(drupal_get_path('module', 'node').'/../../');
 
   $module_dir = $root_path . '/' . drupal_get_path('module', 'taxonomy_menu');
