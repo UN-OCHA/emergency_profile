@@ -61,6 +61,7 @@ function emergency_site_import_menus_batch() {
 }
 
 function emergency_site_rebuild_menus(&$install_state) {
+  drupal_flush_all_caches();
   features_revert(array('humanitarianresponse_emergency_menu'));
   $root_path = realpath(drupal_get_path('module', 'node').'/../../');
 
