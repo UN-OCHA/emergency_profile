@@ -13,7 +13,6 @@ dependencies[] = humanitarianresponse_users
 dependencies[] = humanitarianresponse_highlight
 dependencies[] = humanitarianresponse_contacts
 dependencies[] = humanitarianresponse_search
-dependencies[] = humanitarianresponse_resources
 dependencies[] = humanitarianresponse_assessments
 dependencies[] = humanitarianresponse_media
 dependencies[] = humanitarianresponse_profiles
