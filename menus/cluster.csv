@@ -1,7 +1,7 @@
 Calendar,"taxonomy/term/[term:tid]/calendar"
 Resources,"taxonomy/term/[term:tid]/resources"
 "Meeting Minutes","taxonomy/term/[term:tid]/meeting-minutes"
-Maps,"taxonomy/term/[term:tid]/maps"
+Visuals,"taxonomy/term/[term:tid]/visuals"
 Contacts,"taxonomy/term/[term:tid]/contacts"
 News,"taxonomy/term/[term:tid]/news"
 Links,"taxonomy/term/[term:tid]/links"
