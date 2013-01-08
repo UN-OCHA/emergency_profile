@@ -25,7 +25,6 @@ dependencies[] = humanitarianresponse_documents_data
 dependencies[] = humanitarianresponse_display_data
 dependencies[] = humanitarianresponse_events_data
 dependencies[] = humanitarianresponse_funding_data
-dependencies[] = humanitarianresponse_organizations_data
 dependencies[] = humanitarianresponse_maps_data
 dependencies[] = humanitarianresponse_clusters_data
 dependencies[] = humanitarianresponse_clusters_menu
