@@ -22,5 +22,6 @@ dependencies[] = humanitarianresponse_clusters_menu
 dependencies[] = humanitarianresponse_funding_menu
 dependencies[] = humanitarianresponse_stats
 dependencies[] = humanitarianresponse_aggregator
+dependencies[] = hr_incidents
 files[] = emergency_site.profile
 
