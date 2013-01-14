@@ -6,6 +6,14 @@
  * Perform actions to set up the site for this profile.
  */
 function emergency_site_install() {
+  _emergency_site_taxonomy_menu_rebuild('funding');
+  _emergency_site_taxonomy_menu_rebuild('clusters');
+}
+
+function _emergency_site_taxonomy_menu_rebuild($name) {
+  $voc = taxonomy_vocabulary_machine_name_load($name);
+  $vid = $voc->vid;
+  _taxonomy_menu_rebuild($vid);
 }
 
 /**
